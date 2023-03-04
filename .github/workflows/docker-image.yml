@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Pull the Docker image
-      run: docker pull FROM ghcr.io/blakeblackshear/frigate:dev-318240c-tensorrt
+      run: docker pull ghcr.io/blakeblackshear/frigate:dev-318240c-tensorrt
     - name: Tag Docker image
       run: docker tag ghcr.io/blakeblackshear/frigate:dev-318240c-tensorrt vipzj/test
     - name: Push
